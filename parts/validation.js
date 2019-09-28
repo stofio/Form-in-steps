@@ -6,10 +6,28 @@ function isInvalid(tab) {
             var windows = document.getElementById('checkbox3');
             var carpet = document.getElementById('checkbox4');
             var unpholstery = document.getElementById('checkbox5');
+            /*
+            PROMENITI OVDE NA PO SVAKI RETURN DOLE
+             */
             if(general.checked)
             {
-                var invalid = invalidGeneral() ? true : false;
-                return invalid;
+                var invalidGenerall = invalidGeneral() ? true : false;
+                return invalidGenerall;
+            }
+            if(windows.checked)
+            {
+                var invalidWindowss = invalidWindows() ? true : false;
+                return invalidWindowss;
+            }
+            if(carpet.checked)
+            {
+                var invalidCarpett = invalidCarpet() ? true : false;
+                return invalidCarpett;
+            }
+            if(unpholstery.checked)
+            {
+                var invalidUnpholsteryy = invalidUnpholstery() ? true : false;
+                return invalidUnpholsteryy;
             }
             break;
         case 1://validate details table
@@ -34,14 +52,13 @@ function validateEmail(email) {
 
 function invalidDetails() {
     var invalid = false;
-    var objekatArray = document.getElementsByName('objekat');
-    var spt = document.getElementById('sprat');
-    var namestaj = document.getElementById('namestaj');
-    var sprat = spt.value.trim();
-
-    var objekti = objekatArray.length;
     var notChecked = true;
-    for(var i=0; i < objekti; i++)
+    var objekatArray = document.getElementsByName('objekat');
+    var sprat = document.getElementById('sprat').value.trim();
+    var namestaj = document.getElementById('namestaj');
+    var objektiNr = objekatArray.length;
+
+    for(var i=0; i < objektiNr; i++) // check if objekat  selected
     {
         if(objekatArray[i].checked)
         {
@@ -53,50 +70,44 @@ function invalidDetails() {
     {
         invalid = true;
     }
-    else if (namestaj.value === "")
+    if (namestaj.value === "")
     {
         invalid = true;
     }
-    else { invalid = false; }
     if(invalid || notChecked)
     {
         return true;
     }
-    else { return false; }
 }
 
 function invalidInformation() {
     var invalid = false;
     datum = document.getElementById('datum');
     vreme = document.getElementById('vreme');
-    em = document.getElementById('email');
-    email = em.value.trim();
+    email = document.getElementById('email').value.trim();
     if(datum.value === ""){
         invalid = true;
     }
-    else if(vreme.value === "") {
+    if(vreme.value === "")
+    {
         invalid = true;
     }
-
-    else if(email === "" || validateEmail(email)) {
+    if(email === "" || validateEmail(email))
+    {
         invalid = true;
-    }
-    else {
-        invalid = false;
     }
     return invalid;
 }
 
 function invalidGeneral() {
     var invalid = false;
-    var ar = document.getElementById('area');
+    var notChecked = true;
+    var area = document.getElementById('area').value.trim();
     var cleanSelect = document.getElementById('clean-select');
     var prljavoArray = document.getElementsByName('prljavo');
-    var area = ar.value.trim();
+    var prljavoNr = prljavoArray.length;
 
-    var prljavo = prljavoArray.length;
-    var notChecked = true;
-    for(var i=0; i < prljavo; i++)
+    for(var i=0; i < prljavoNr; i++) //check if dirt type selected
     {
         if(prljavoArray[i].checked)
         {
@@ -107,13 +118,148 @@ function invalidGeneral() {
     if(area === "") {
         invalid = true;
     }
-    else if(cleanSelect.value === "") {
+    if(cleanSelect.value === "") {
         invalid = true;
     }
-    else { invalid = false; }
     if(invalid || notChecked)
     {
         return true;
     }
-    else { return false; }
 }
+
+function invalidWindows() {
+    var invalid = false;
+    var ciscenjeNotChecked = true;
+    var prljavoNotChecked = true;
+    var velicina = document.getElementById('prozorV').value.trim();
+    var plafon = document.getElementById('plafonV').value.trim();
+    var ciscenjaArray = document.getElementsByName('ciscenje[]');
+    var prljavoArray = document.getElementsByName('prljavoWin');
+    var ciscenjeNr = ciscenjaArray.length;
+    var prljavoNr = prljavoArray.length;
+
+    if(velicina === "")
+    {
+        invalid = true;
+    }
+    if(plafon === "")
+    {
+        invalid = true;
+    }
+    for(i=0 ; i < ciscenjeNr; i++)
+    {
+        if(ciscenjaArray[i].checked)
+        {
+            ciscenjeNotChecked = false;
+            break;
+        }
+    }
+    for(j=0; j < prljavoNr; j++)
+    {
+        if(prljavoArray[j].checked)
+        {
+            prljavoNotChecked = false;
+            break;
+        }
+    }
+    if(invalid  || ciscenjeNotChecked || prljavoNotChecked)
+    {
+        return true;
+    }
+}
+
+function invalidCarpet() {
+    var invalid = false;
+    var ciscenjeNotChecked = true;
+    var prljavoNotChecked = true;
+    var kolicina = document.getElementById('tepihK');
+    var velicina = document.getElementById('tepihA').value.trim();
+    var ciscenjaArray = document.getElementsByName('ciscenje2[]');
+    var prljavoArray = document.getElementsByName('prljavoCar');
+    var ciscenjaNr = ciscenjaArray.length;
+    var prljavoNr = prljavoArray.length;
+
+    if(kolicina.value < 1 || kolicina.value === "")
+    {
+        invalid = true;
+    }
+    if(velicina === "")
+    {
+        invalid = true;
+    }
+    for(i=0; i < ciscenjaNr; i++)
+    {
+        if(ciscenjaArray[i].checked)
+        {
+            ciscenjeNotChecked = false;
+            break;
+        }
+    }
+    for(j=0; j < prljavoNr; j++)
+    {
+        if(prljavoArray[j].checked)
+        {
+            prljavoNotChecked = false;
+            break;
+        }
+    }
+    if(invalid || ciscenjeNotChecked || prljavoNotChecked)
+    {
+        return true;
+    }
+}
+
+function invalidUnpholstery() {
+    var invalid = false;
+    var ciscenjeNotChecked = true;
+    var prljavoNotChecked = true;
+    var TwoSit = document.getElementById('TwoSit').value;
+    var threeSit = document.getElementById('threeSit').value;
+    var sessel = document.getElementById('sessel').value;
+    var couch = document.getElementById('couch').value;
+    var eKl = document.getElementById('eKl').value;
+    var eGr = document.getElementById('eGr').value;
+    var polOhng = document.getElementById('polOhng').value;
+    var polMit = document.getElementById('polMit').value;
+    var ciscenjaArray = document.getElementsByName('ciscenje3[]');
+    var prljavoArray = document.getElementsByName('prljavoUnph');
+    var ciscenjaNr = ciscenjaArray.length;
+    var prljavoNr = prljavoArray.length;
+
+    if(TwoSit === "" && threeSit === "" && sessel === "" && couch === ""
+        && eKl === "" && eGr === "" && polOhng === "" && polMit === "")
+    {
+        invalid = true;
+    }
+    for(i=0; i < ciscenjaNr; i++)
+    {
+        if(ciscenjaArray[i].checked)
+        {
+            ciscenjeNotChecked = false;
+            break;
+        }
+    }
+    for(j=0; j < prljavoNr; j++)
+    {
+        if(prljavoArray[j].checked)
+        {
+            prljavoNotChecked = false;
+            break;
+        }
+    }
+    if(invalid || ciscenjeNotChecked || prljavoNotChecked)
+    {
+        return true;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

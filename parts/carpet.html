@@ -4,21 +4,11 @@
    --------------------------------------------------------------------------
    ---------------------------------------------------------------------------->
     <div class="inputGroup checkboxx">
-        <input id="checkbox4" type="checkbox"/ name="carpet">
+        <input id="checkbox4" type="checkbox" name="carpet">
         <label for="checkbox4">Teppichreinigung</label>
   </div>
 <div class="thinLine"></div>
     <div class="cl3" style="display:none ;">
-
-        <div class="row" style="margin-top: 10px">
-           <div id="error-tepihV"></div>
-            <div class="col-md-4" style="padding-top:20px;">
-                <label for="textInput14">Teppichgröße</label></div>
-            <div class="col-md-8">
-                <input type="text" id="textInput14" class=" col-md-8 form-control mb-4" placeholder="größe in m&sup2;" name="tepihV">
-            </div>
-        </div>
-
         <div class="row" style="margin-top: 10px">
             <div class="col-md-4" style="padding-top:10px;">
                 <label>Menge Teppich</label>
@@ -26,18 +16,18 @@
             <div class="col-md-8">
                 <div class="number-input">
                     <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-                    <input class="quantity" min="0" name="tepihK" value="" type="number">
+                    <input class="quantity" min="1" name="tepihK" value="" type="number" id="tepihK">
                     <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                 </div>
             </div>
         </div>
 
         <div class="row" style="margin-top: 10px">
+           <div id="error-tepihV"></div>
             <div class="col-md-4" style="padding-top:20px;">
-            </div>
-            <div id="error-tepihA"></div>
+                <label for="tepihA">Teppichgröße</label></div>
             <div class="col-md-8">
-                <input type="text" id="" class=" col-md-8 form-control mb-4" placeholder="Gesamtfläche in m&sup2;" name="tepihA">
+                <input type="text" id="tepihA" class=" col-md-8 form-control mb-4" placeholder="Gesamtfläche in m&sup2;" name="tepihA">
             </div>
         </div>
 

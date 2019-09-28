@@ -4,7 +4,7 @@
    --------------------------------------------------------------------------
    ---------------------------------------------------------------------------->
    <div class="inputGroup checkboxx">
-        <input id="checkbox2" type="checkbox"/ name="general">
+        <input id="checkbox2" type="checkbox" name="general">
         <label for="checkbox2">Allgemeine Reinigung</label>
   </div>
     <div class="thinLine"></div>
