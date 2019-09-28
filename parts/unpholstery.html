@@ -1,0 +1,187 @@
+<!-----------------------------------------------------------------------------
+   --------------------------------------------------------------------------
+   -------UNPHOLSTERY CLEANING---------------------------------------------------
+   --------------------------------------------------------------------------
+   ---------------------------------------------------------------------------->
+    <div class="inputGroup checkboxx">
+        <input id="checkbox5" type="checkbox"/ name="upholstery">
+        <label for="checkbox5">Polsterreinigung</label>
+  </div>
+  <div class="thinLine"></div>
+    <div class="cl4" style="display:none">
+        <div class="row" style="margin-top: 10px">
+            <div class="col-md-5">
+                <label style="padding-top: 20px;">2 Sitzer</label>
+            </div>
+            <div class="col-md-7" style="padding-top:10px">
+                <div class="number-input">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                    <input class="quantity uph" min="0" name="TwoSit" value="" type="number">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-5">
+                <label style="padding-top: 20px;">3 Sitzer</label>
+            </div>
+            <div class="col-md-7" style="padding-top:10px">
+                <div class="number-input">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                    <input class="quantity uph" min="0" name="threeSit" value="" type="number">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-5">
+                <label style="padding-top: 20px;">Sessel</label>
+            </div>
+            <div class="col-md-7" style="padding-top:10px">
+                <div class="number-input">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                    <input class="quantity uph" min="0" name="sessel" value="" type="number">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-5">
+                <label style="padding-top: 20px;">Couch</label>
+            </div>
+            <div class="col-md-7" style="padding-top:10px">
+                <div class="number-input">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                    <input class="quantity uph" min="0" name="couch" value="" type="number">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-5">
+                <label style="padding-top: 20px;">Eckcouch klein</label>
+            </div>
+            <div class="col-md-7" style="padding-top:10px">
+                <div class="number-input">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                    <input class="quantity uph" min="0" name="eKl" value="" type="number">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-5">
+                <label style="padding-top: 20px;">Eckcouch groß</label>
+            </div>
+            <div class="col-md-7" style="padding-top:10px">
+                <div class="number-input">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                    <input class="quantity uph" min="0" name="eGr" value="" type="number">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-5">
+                <label style="padding-top: 20px;">Polsterstuhl ohne Polsterlehne</label>
+            </div>
+            <div class="col-md-7" style="padding-top:15px">
+                <div class="number-input">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                    <input class="quantity uph" min="0" name="polOhng" value="" type="number">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-5">
+                <label style="padding-top: 20px;">Polsterstuhl mit Polsterlehne</label>
+            </div>
+            <div class="col-md-7" style="padding-top:15px">
+                <div class="number-input">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                    <input class="quantity uph" min="0" name="polMit" value="" type="number">
+                    <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+            </div>
+        </div>
+
+        <h4 style="margin-top:25px; margin-bottom:0;">Reinigungswünsche</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="" style="margin-top:10px; display:flex; flex-direction:column; align-items: baseline;">
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="w991" name="ciscenje3[]" value="Stains">
+                        <label style="font-weight: 100;" for="w991">Stains</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="w992" name="ciscenje3[]" value="Blood">
+                        <label style="font-weight: 100;" for="w992">Blood</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="" style="margin-top:10px; display:flex; flex-direction:column; align-items: baseline;">
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="w994" name="ciscenje3[]" value="Vomit">
+                        <label style="font-weight: 100;" for="w994">Vomit</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="w995" name="ciscenje3[]" value="Umzug">
+                        <label style="font-weight: 100;" for="w995">Umzug</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="" style="margin-top:10px; display:flex; flex-direction:column; align-items: baseline;">
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="w996" name="ciscenje3[]" value="Wasserschaden">
+                        <label style="font-weight: 100;" for="w996">Wasserschaden</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="w997" name="ciscenje3[]" value="Andere">
+                        <label style="font-weight: 100;" for="w997">Andere</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <h4 style="margin-top:25px; margin-bottom:10px;">Grad der Verschmutzung</h4>
+        <div id="error-prljavo"></div>
+        <div class="row" style="display:flex; justify-content: space-between;">
+            <div class="custom-control custom-radio mb-4">
+                <img src="https://noblesternreinigung.at/wp-content/uploads/2019/08/1.png" width="50" style="margin: 0 auto">
+                <div class="custom-control custom-radio mb-4">
+                    <input type="radio" class="big-radio custom-control-input" id="unphDirt1" name="prljavoUnph" value="Leight">
+                    <label class="custom-control-label" for="unphDirt1">Leight</label>
+                </div>
+            </div>
+            <div class="custom-control custom-radio mb-4">
+                <img src="https://noblesternreinigung.at/wp-content/uploads/2019/08/2.png" width="50" style="margin: 0 auto">
+                <div class="custom-control custom-radio mb-4">
+                    <input type="radio" class="big-radio custom-control-input" id="unphDirt2" name="prljavoUnph" value="Normal">
+                    <label class="custom-control-label" for="unphDirt2">Normal</label>
+                </div>
+            </div>
+
+            <div class="custom-control custom-radio mb-4">
+                <div class="custom-control custom-radio mb-4">
+                    <img src="https://noblesternreinigung.at/wp-content/uploads/2019/08/3.png" width="50" style="margin: 0 auto">
+                    <input type="radio" class="big-radio custom-control-input" id="unphDirt3" name="prljavoUnph" value="Stark">
+                    <label class="custom-control-label" for="unphDirt3">Stark</label>
+                </div>
+            </div>
+
+            <div class="custom-control custom-radio mb-4">
+                <div class="custom-control custom-radio mb-4">
+                    <img src="https://noblesternreinigung.at/wp-content/uploads/2019/08/4.png" width="50" style="margin: 0 auto">
+                    <input type="radio" class="big-radio custom-control-input" id="unphDirt4" name="prljavoUnph" value="Extreme">
+                    <label class="custom-control-label" for="unphDirt4">Extreme</label>
+                </div>
+            </div>
+        </div>
+        <h4 style="margin-top:25px; margin-bottom:10px;">Zusätzliche informationen</h4>
+        <textarea id="textarea" class="form-control mb-4" placeholder="Zusätzliche informationen" style="resize: vertical;" name="dodatneInfo4"></textarea>
+    </div>

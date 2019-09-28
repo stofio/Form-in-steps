@@ -1,0 +1,114 @@
+<!-----------------------------------------------------------------------------
+   --------------------------------------------------------------------------
+   -------WINDOW CLEANINING---------------------------------------------------
+   --------------------------------------------------------------------------
+   ---------------------------------------------------------------------------->
+
+    <div class="inputGroup checkboxx">
+        <input id="checkbox3" type="checkbox"/ name="window">
+        <label for="checkbox3">Fensterreinigung</label>
+  </div>
+<div class="thinLine"></div>
+    <div class="cl2" style="display: none">
+
+        <div class="row" style="margin-top: 25px">
+           <div id="error-prozorV"></div>
+            <div class="col-md-5" style="padding-top:20px;">
+                <label>Gesamt Fenstergröße in m&sup2;</label></div>
+            <div class="col-md-7">
+                <input type="text" class=" col-md-8 form-control mb-4" placeholder="z.B 9,5m" name="prozorV">
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 25px">
+           <div id="error-plafonV"></div>
+            <div class="col-md-5" style="padding-top:20px;">
+                <label>Max. Raumhöhe</label></div>
+            <div class="col-md-7">
+                <input type="text" class=" col-md-8 form-control mb-4" placeholder="z.B 3,2m" name="plafonV">
+            </div>
+        </div>
+
+        <h4 style="margin-top:25px; margin-bottom:0;">Reinigungswünsche</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="" style="margin-top:10px; display:flex; flex-direction:column; align-items: baseline;">
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="y1" name="ciscenje[]" value="Innen/Aussen">
+                        <label style="font-weight: 100;" for="y1">Innen/Aussen</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="y2" name="ciscenje[]" value="Nur innen">
+                        <label style="font-weight: 100;" for="y2">Nur innen</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="y3" name="ciscenje[]" value="Nur aussen">
+                        <label style="font-weight: 100;" for="y3">Nur aussen</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="y4" name="ciscenje[]" value="Rahmen">
+                        <label style="font-weight: 100;" for="y4">Rahmen</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="" style="margin-top:10px; display:flex; flex-direction:column; align-items: baseline;">
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="y5" name="ciscenje[]" value="Fensterbretter">
+                        <label style="font-weight: 100;" for="y5">Fensterbretter</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="y6" name="ciscenje[]" value="Wintergarten">
+                        <label style="font-weight: 100;" for="y6">Wintergarten</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="y7" name="ciscenje[]" value="Blinds">
+                        <label style="font-weight: 100;" for="y7">Blinds</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-4" style="flex-grow: 1">
+                        <input style="height: 17px;" type="checkbox" class="custom-control-input" id="y8" name="ciscenje[]" value="Altbaufenster">
+                        <label style="font-weight: 100;" for="y8">Altbaufenster</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <h4 style="margin-top:25px; margin-bottom:10px;">Grad der Verschmutzung</h4>
+        <div id="error-prljavo"></div>
+        <div class="row" style="display:flex; justify-content: space-between;">
+            <div class="custom-control custom-radio mb-4">
+                <img src="https://noblesternreinigung.at/wp-content/uploads/2019/08/1.png" width="50" style="margin: 0 auto">
+                <div class="custom-control custom-radio mb-4">
+                    <input type="radio" class="big-radio custom-control-input" id="winDirt1" name="prljavoWin" value="Leight">
+                    <label class="custom-control-label" for="winDirt1">Leight</label>
+                </div>
+            </div>
+            <div class="custom-control custom-radio mb-4">
+                <img src="https://noblesternreinigung.at/wp-content/uploads/2019/08/2.png" width="50" style="margin: 0 auto">
+                <div class="custom-control custom-radio mb-4">
+                    <input type="radio" class="big-radio custom-control-input" id="winDirt2" name="prljavoWin" value="Normal">
+                    <label class="custom-control-label" for="winDirt2">Normal</label>
+                </div>
+            </div>
+
+            <div class="custom-control custom-radio mb-4">
+                <div class="custom-control custom-radio mb-4">
+                    <img src="https://noblesternreinigung.at/wp-content/uploads/2019/08/3.png" width="50" style="margin: 0 auto">
+                    <input type="radio" class="big-radio custom-control-input" id="winDirt3" name="prljavoWin" value="Stark">
+                    <label class="custom-control-label" for="winDirt3">Stark</label>
+                </div>
+            </div>
+
+            <div class="custom-control custom-radio mb-4">
+                <div class="custom-control custom-radio mb-4">
+                    <img src="https://noblesternreinigung.at/wp-content/uploads/2019/08/4.png" width="50" style="margin: 0 auto">
+                    <input type="radio" class="big-radio custom-control-input" id="winDirt4" name="prljavoWin" value="Extreme">
+                    <label class="custom-control-label" for="winDirt4">Extreme</label>
+                </div>
+            </div>
+        </div>
+        <h4 style="margin-top:25px; margin-bottom:10px;">Zusätzliche informationen</h4>
+        <textarea id="" class="form-control mb-4" placeholder="Zusätzliche informationen" style="resize: vertical; margin-bottom: 32px !important;" name="dodatneInfo2"></textarea>
+
+    </div>
