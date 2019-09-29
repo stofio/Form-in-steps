@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/parts/validation.js" line="1" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1175e0c2-0f34-496d-a07b-3c548152019d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/carpet.html" beforeDir="false" afterPath="$PROJECT_DIR$/parts/carpet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/general.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/unpholstery.html" beforeDir="false" afterPath="$PROJECT_DIR$/parts/unpholstery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parts/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/parts/validation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/windows.html" beforeDir="false" afterPath="$PROJECT_DIR$/parts/windows.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +21,10 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5603338">
+    <splitter split-orientation="horizontal" split-proportion="0.5102696">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/parts/unpholstery.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="384">
@@ -44,6 +42,15 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="118">
+                  <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -51,24 +58,17 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/parts/validation.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="694">
-                  <caret line="248" column="5" selection-start-line="248" selection-start-column="5" selection-end-line="248" selection-end-column="5" />
+                <state relative-caret-position="16">
+                  <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
                   <folding>
                     <element signature="n#!!block;n#validateEmail#0" />
                     <element signature="n#!!block;n#invalidDetails#0" />
                     <element signature="n#!!block;n#invalidInformation#0" />
                     <element signature="n#!!block;n#f#0" />
                     <element signature="n#!!block;n#invalidWindows#0" />
+                    <element signature="n#!!block;n#invalidCarpet#0" />
+                    <element signature="n#!!block;n#f#0" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -84,11 +84,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/parts/details.html" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/parts/windows.html" />
         <option value="$PROJECT_DIR$/parts/general.php" />
         <option value="$PROJECT_DIR$/parts/carpet.html" />
         <option value="$PROJECT_DIR$/parts/unpholstery.html" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/parts/validation.js" />
       </list>
     </option>
@@ -135,7 +135,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,16 +159,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569591073769</updated>
-      <workItem from="1569591076732" duration="24540000" />
+      <workItem from="1569591076732" duration="29095000" />
     </task>
+    <task id="LOCAL-00001" summary="Validation js - part 1">
+      <created>1569691064474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569691064474</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24540000" />
+    <option name="totallyTimeSpent" value="29095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1632653" />
@@ -194,6 +201,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Validation js - part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validation js - part 1" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/parts/details.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -206,13 +217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="832">
           <caret line="52" column="85" lean-forward="true" selection-start-line="52" selection-start-column="85" selection-end-line="52" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -244,16 +248,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parts/validation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="248" column="5" selection-start-line="248" selection-start-column="5" selection-end-line="248" selection-end-column="5" />
+        <state relative-caret-position="16">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
           <folding>
             <element signature="n#!!block;n#validateEmail#0" />
             <element signature="n#!!block;n#invalidDetails#0" />
             <element signature="n#!!block;n#invalidInformation#0" />
             <element signature="n#!!block;n#f#0" />
             <element signature="n#!!block;n#invalidWindows#0" />
+            <element signature="n#!!block;n#invalidCarpet#0" />
+            <element signature="n#!!block;n#f#0" />
           </folding>
         </state>
       </provider>
