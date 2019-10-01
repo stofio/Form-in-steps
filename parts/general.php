@@ -23,7 +23,7 @@
             </div>
             <div class="col-md-8">
                 <select onchange="sel()" class="browser-default custom-select mb-4" id="clean-select" name="clReason">
-                    <option value="" selected="none">-Bitte wählen-</option>
+                    <option value="" disabled selected="none">-Bitte wählen-</option>
                     <option name="cl-1" value="Normale Reinigung">Normale Reinigung</option>
                     <option name="cl-2" value="Endreinigung">Endreinigung</option>
                     <option name="cl-3" value="Umzugsreinigung">Umzugsreinigung</option>
@@ -45,7 +45,7 @@
         
         <?php include "parts/general-cleanings.html"; ?>
 
-        <h4 style="margin-top:25px; margin-bottom:10px; font-weight: bold;
+        <h4 id="prljavo1" style="margin-top:25px; margin-bottom:10px; font-weight: bold;
     color: teal;">Grad der Verschmutzung</h4>
         <div id="error-prljavo"></div>
         <div class="row" style="display:flex; justify-content: space-between;">

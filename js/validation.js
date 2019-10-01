@@ -75,8 +75,6 @@
         if(invalidDetails())
         {
           showBoxError('error-details', 'error-msg-details', msgErrPolja);
-          errBox.style.display = "block";
-          errText.innerHTML = msgErrPolja;
           return true; //invalid
         }
         else

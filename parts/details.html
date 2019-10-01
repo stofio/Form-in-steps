@@ -1,85 +1,91 @@
 
-                    <h4 style="margin-top:25px; margin-bottom:10px;">Objektart</h4>
-                    <div id="error-objekat"></div>
-                    <div class="row" style="display:flex; justify-content: space-between;">
-                        <div class="custom-control-b custom-radio mb-4">
-                            <div>
-                                <i class="fas fa-home fa-3x"></i>
-                            </div>                            
-                            <div>
-                                <input type="radio" class="custom-control-input big-radio" id="r1" name="objekat" value="Haus">
-                                <label class="custom-control-label" for="r1">Haus</label>
-                            </div>
-                        </div>
-                        <div class="custom-control-b custom-radio mb-4">
-                            <div>
-                                <i class="fas fa-building fa-3x"></i>
-                            </div>
-                            <div>
-                                <input type="radio" class="custom-control-input big-radio" id="r2" name="objekat" value="Wohnung">
-                                <label class="custom-control-label" for="r2">Wohnung</label>
-                            </div>
-                        </div>
-                        <div class="custom-control-b custom-radio mb-4">
-                            <div>
-                                <i class="fas fa-briefcase fa-3x"></i>
-                            </div>
-                            <div>
-                                <input type="radio" class="custom-control-input big-radio" id="r3" name="objekat" value="Büro">
-                                <label class="custom-control-label" for="r3">Büro</label>
-                            </div>
-                        </div>
-                    </div>
+<h4 id="objekat" style="margin-top:25px; margin-bottom:10px;">Objektart</h4>
+<div id="error-objekat"></div>
+<div class="row" style="display:flex; justify-content: space-between;">
+    <div class="custom-control-b custom-radio mb-4">
+        <div>
+            <i class="fas fa-home fa-3x"></i>
+        </div>
+        <div>
+            <input type="radio" class="custom-control-input big-radio" id="r1" name="objekat" value="Haus">
+            <label class="custom-control-label" for="r1">Haus</label>
+        </div>
+    </div>
+    <div class="custom-control-b custom-radio mb-4">
+        <div>
+            <i class="fas fa-building fa-3x"></i>
+        </div>
+        <div>
+            <input type="radio" class="custom-control-input big-radio" id="r2" name="objekat" value="Wohnung">
+            <label class="custom-control-label" for="r2">Wohnung</label>
+        </div>
+    </div>
+    <div class="custom-control-b custom-radio mb-4">
+        <div>
+            <i class="fas fa-briefcase fa-3x"></i>
+        </div>
+        <div>
+            <input type="radio" class="custom-control-input big-radio" id="r3" name="objekat" value="Büro">
+            <label class="custom-control-label" for="r3">Büro</label>
+        </div>
+    </div>
+</div>
 
-                    <div class="row" style="margin-top:15px; display:flex; justify-content: space-between;">
-                        <div class="custom-control-b custom-radio mb-4">
-                           <div>
-                                <i class="fas fa-utensils fa-3x"></i>
-                            </div>
-                            <div>
-                                <input type="radio" class="custom-control-input big-radio big-radio" id="r4" name="objekat" value="Restaurant">
-                                <label class="custom-control-label" for="r4">Restaurant</label>
-                            </div>
-                        </div>
-                        <div class="custom-control-b custom-radio mb-4">
-                           <div>
-                                <i class="fas fa-industry fa-3x"></i>
-                            </div>
-                            <div>
-                                <input type="radio" class="custom-control-input big-radio" id="r5" name="objekat" value="Fabrik">
-                                <label class="custom-control-label" for="r5">Fabrik</label>
-                            </div>
-                        </div>
-                        <div class="custom-control-b custom-radio mb-4">
-                           <div>
-                                <i class="fas fa-city fa-3x"></i>
-                            </div>
-                            <div>
-                                <input type="radio" class="custom-control-input big-radio" id="r6" name="objekat" value="Andere">
-                                <label class="custom-control-label" for="r6">Andere</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="margin-top: 25px">
-                        <div id="error-sprat"></div>
-                        <div class="col-md-4" style="padding-top:16px;">
-                            <label for="sprat">Stock / Etage</label></div>
-                        <div class="col-md-8">
-                            <input name="sprat" type="text" id="sprat" class=" col-md-8 form-control mb-4" placeholder="z.B EG oder 7.OG">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4" style="padding-top:12px">
-                            <label for="namestaj">Art der Möblierung</label>
-                        </div>
-                        <div class="col-md-8">
-                            <select name="namestaj" class="browser-default custom-select mb-4" id="namestaj">
-                                <option value="" disabled="" selected="">Bitte vählen</option>
-                                <option value="möbliert">möbliert</option>
-                                <option value="teilmöbliert">teilmöbliert</option>
-                                <option value="unmöbliert">unmöbliert</option>
-                            </select>
-                        </div>
-                    </div>
+<div class="row" style="margin-top:15px; display:flex; justify-content: space-between;">
+    <div class="custom-control-b custom-radio mb-4">
+       <div>
+            <i class="fas fa-utensils fa-3x"></i>
+        </div>
+        <div>
+            <input type="radio" class="custom-control-input big-radio big-radio" id="r4" name="objekat" value="Restaurant">
+            <label class="custom-control-label" for="r4">Restaurant</label>
+        </div>
+    </div>
+    <div class="custom-control-b custom-radio mb-4">
+       <div>
+            <i class="fas fa-industry fa-3x"></i>
+        </div>
+        <div>
+            <input type="radio" class="custom-control-input big-radio" id="r5" name="objekat" value="Fabrik">
+            <label class="custom-control-label" for="r5">Fabrik</label>
+        </div>
+    </div>
+    <div class="custom-control-b custom-radio mb-4">
+       <div>
+            <i class="fas fa-city fa-3x"></i>
+        </div>
+        <div>
+            <input type="radio" class="custom-control-input big-radio" id="r6" name="objekat" value="Andere">
+            <label class="custom-control-label" for="r6">Andere</label>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-top: 25px">
+    <div id="error-sprat"></div>
+    <div class="col-md-4" style="padding-top:16px;">
+        <label for="sprat">Stock / Etage</label></div>
+    <div class="col-md-8">
+        <input name="sprat" type="text" id="sprat" class=" col-md-8 form-control mb-4" placeholder="z.B EG oder 7.OG">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4" style="padding-top:12px">
+        <label for="namestaj">Art der Möblierung</label>
+    </div>
+    <div class="col-md-8">
+        <select name="namestaj" class="browser-default custom-select mb-4" id="namestaj">
+            <option value="" disabled="" selected="">Bitte vählen</option>
+            <option value="möbliert">möbliert</option>
+            <option value="teilmöbliert">teilmöbliert</option>
+            <option value="unmöbliert">unmöbliert</option>
+        </select>
+    </div>
+</div>
+<div id="error-details" style="display: none;">
+    <p class="error">
+        <span id="error-msg-details"></span>
+        <i id="errIcon2" class="fas fa-exclamation-triangle fa-lg heartBeat" style="color: #e20606; margin-right:5px"></i>
+    <p/>
+</div>
 
 
