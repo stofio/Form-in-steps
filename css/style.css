@@ -3975,11 +3975,7 @@ button {
 .custom-control-b {
     width: 33%;
 }
-
-.custom-control-b > div {
-    padding-left: 20px;
-}
-
+    
 .error {
     font-family: arial;
     padding: 15px;
@@ -4042,4 +4038,35 @@ animation for error
 
 .shake {
     animation-name: shake;
+}
+
+/*radio b*/
+.Haus {background-image: url(../img/home-solid.svg);}
+.Wohnung {background-image: url(../img/building-solid.svg);}
+.Büro {background-image: url(../img/briefcase-solid.svg);}
+.Restaurant {background-image: url(../img/utensils-solid.svg);}
+.Fabrik {background-image: url(../img/industry-solid.svg);}
+.Andere {background-image: url(../img/city-solid.svg);}
+
+.hidden-r:active + .datails-icon{
+  opacity: .9;
+}
+.hidden-r:checked + .datails-icon{
+    filter: none;
+    color: red
+}
+
+.datails-icon {
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:70px;
+    height:50px;
+    transition: all 100ms ease-in;
+    filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+
+.datails-icon:hover{
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
